@@ -17,7 +17,7 @@ fetch(url2)
                                             </div >\
                                         <div class="back" >\
                                             <section>\
-                                            <div class="bg" style="background-image: url('+ data[make][i].image + ');\
+                                            <div class="bg" style="background-image: url('+data[make][i].image+');\
                                                                  background-size:cover;\
                                                                  background-color:#dadada;\
                                                                  background-repeat: no-repeat;\
@@ -36,4 +36,11 @@ fetch(url2)
                                 </div>'
             }
         }
+
+        $(function () {
+            $('.checkboxCon').click(function () {
+                $(this).toggleClass('active');
+            })
+        });
+
     });
